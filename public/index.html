@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Calculadora Salarial</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+
+  <main class="container-principal">
+    <header>
+      <h1>Calculadora Salário</h1>
+    </header>
+    <p>Dados</p>
+    
+    
+    
+    <form action="" class="formulario">
+      <label for="">Profissão</label>
+      <select name="" class="profissao">
+      <option value="padrao">Selecione uma Profissão</option>
+      <option value="zelador">Zelador</option>
+      <option value="porteiroDiurno">Porteiro (Diurno)</option>
+      <option value="porteiroNoturno">Porteiro (Noturno)</option>
+    </select>
+      <label for="Salario Base" class="labelSal">Salário Base</label>
+      <input type="number" class="salBase validar valor" pattern="\d+" placeholder="Salário Base" step="0.01" name="quantity" min="0.01">
+
+      <label for="QTD H.Extras">Quantidade de Horas Extra</label>
+      <input type="text" class="hExtra valor" pattern="\d+" placeholder="QTD.H.EXTRA C/ 50%">
+
+      <input type="text" pattern="\d+" class="hExtra100 valor" placeholder="QTD.H.EXTRA C/ 100%">
+
+
+      <label for="mes" class="mes">Escolha um mês e um ano para calcular o Dsr (Descanso Semanal Remunerado):</label>
+      <input type="month" id="mes" name="mes" class="mes">
+
+
+      <label for="Salário família">Recebe Salário família ?</label>
+      <select name="Salario-Familia" class="salFamilia">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <label for="Vale transporte">Recebe Vale-transporte ?</label>
+      <select name="Vale-transporte" class="valTransporte">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+      
+      <label for="">Paga Contribuição Associativa ?</label>
+      <select name="Contribuicao-associativa" class="contAssociativa">
+        <option value="nao">Não</option>
+        <option value="sim">Sim</option>
+      </select>
+
+      <label for="adiantamento"> Recebeu o adiantamento ?</label>
+      <input type="text" pattern="\d+" class="adiantamento valor" placeholder="Valor Recebido">
+
+      <button type="submit" class="gerar">Calcular</button>
+    </form>
+    <div class="res">
+
+    </div>
+  </main>
+  <!-- Project -->
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>

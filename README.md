@@ -1,2 +1,2 @@
-# calculadora-salario-21-05-24
- ...
+# Calculadora-Salário
+ É uma calculadora salarial.
